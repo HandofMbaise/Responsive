@@ -8,22 +8,67 @@
 
 body{
     background-color: black;
-    font-size: 2rem;
+    
 }
 
 .parent-container{
     height: 200px;
     background-color: cyan;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+}
+
+.child-container{
+    margin: 10px 0 0 0;
+    font-size: 2rem;
+}
+
+.nav{
+  margin: 20px 0 0 0;
+}
+
+.nav ul a {
+    margin-right: 2px;
 }
 
 
-@media (max-width: 360px){
+.parent-container{
+    height: 200px;
+    background-color: cyan;
+    display: flex;
+    justify-content: space-around;
+}
+
+.child-container{
+    margin: 10px 0 0 0;
+    font-size: 2rem;
+}
+
+.nav{
+  margin: 20px 0 0 0;
+}
+
+.nav ul a {
+    margin-right: 2px;
+}
+
+
+@media (max-width: 440px){
 
    .parent-container{
-    width: 363px;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .nav{
+    margin-bottom: 2em;
+   }
+
+}
+
+@media (max-width: 214px){
+   .nav{
+     margin-left: 1em;
    }
 
 }
