@@ -8,11 +8,12 @@
 
 body{
     background-color: black;
-    
+    color: white;
 }
 
 .parent-container{
     height: 200px;
+    color: black;
     background-color: cyan;
     display: flex;
     justify-content: space-around;
@@ -48,22 +49,47 @@ body{
   margin: 20px 0 0 0;
 }
 
+
 .nav ul a {
     margin-right: 2px;
+}
+
+
+.register-parent-container {
+    height: 200px;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+.input{
+   height: 2rem;
+   width: 27rem;
+   margin-top: 1rem;
+}
+
+#Email {
+    margin-left: 1.9rem;
+}
+
+.submit-button {
+    margin: 4px 0 0 5rem
 }
 
 
 @media (max-width: 440px){
 
-   .parent-container{
+  .parent-container{
       flex-direction: column;
       align-items: center;
+      justify-content: center;
    }
 
-   .nav{
+  .nav{
     margin-bottom: 2em;
    }
-
 }
 
 @media (max-width: 214px){
@@ -71,4 +97,39 @@ body{
      margin-left: 1em;
    }
 
+}
+
+@media (max-width: 580px){
+
+   .register-parent-container{
+        flex-direction: column;
+        background-color: orange;
+    }
+
+    .input{
+        width: 20rem;
+        margin-top: 0;
+    }
+     #Email{
+        margin-left: 0;
+     }
+     
+    .label{
+        display: block;
+        
+    }
+
+    .submit-button{
+        margin: 0;
+    }
+}
+
+@media (max-width: 328px){
+    .parent-container{
+        width: 400px;
+    }
+
+    .register-parent-container{
+        width: 400px;
+    }
 }
