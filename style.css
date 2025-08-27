@@ -14,50 +14,32 @@ body{
 .parent-container{
     height: 200px;
     color: black;
-    background-color: cyan;
-    display: flex;
-    justify-content: space-around;
+    background-color: rgb(201, 135, 49);
 }
 
-.child-container{
+.header-container{
+    display: flex;
+    justify-content: space-around;
     margin: 10px 0 0 0;
+}
+
+.logo{
     font-size: 2rem;
+    margin-top: 10px;
 }
 
 .nav{
   margin: 20px 0 0 0;
 }
 
-.nav ul a {
-    margin-right: 2px;
-}
-
-
-.parent-container{
-    height: 200px;
-    background-color: cyan;
-    display: flex;
-    justify-content: space-around;
-}
-
-.child-container{
-    margin: 10px 0 0 0;
-    font-size: 2rem;
-}
-
-.nav{
-  margin: 20px 0 0 0;
-}
-
-
-.nav ul a {
-    margin-right: 2px;
+ ul a {
+    margin-right: 10px;
+    font-size: 1rem;
 }
 
 
 .register-parent-container {
     height: 200px;
-    background-color: purple;
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -78,23 +60,49 @@ body{
     margin: 4px 0 0 5rem
 }
 
+.closing-parent-container{
+    display: flex;
+    padding-top: 8rem;
+    color: rgb(201, 135, 49);
+    height: 50px;
+    margin-left: 10px;
+}
 
-@media (max-width: 440px){
+.Email{
+    text-decoration: none;
+    color: antiquewhite;
+}
 
-  .parent-container{
+@media (max-width: 990px){
+   .closing-parent-container{
+       padding-top: 3rem;
+    }
+}
+
+@media (max-width: 676px){
+    .closing-parent-container{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .Email{
+        margin-left: 3.5rem;
+    }
+}
+
+@media (max-width: 328px){
+    .closing-parent-container{
+        width: 400px;
+    }
+}
+
+@media (max-width: 700px){
+
+  .header-container{
       flex-direction: column;
       align-items: center;
       justify-content: center;
-   }
-
-  .nav{
-    margin-bottom: 2em;
-   }
-}
-
-@media (max-width: 214px){
-   .nav{
-     margin-left: 1em;
    }
 
 }
@@ -103,7 +111,6 @@ body{
 
    .register-parent-container{
         flex-direction: column;
-        background-color: orange;
     }
 
     .input{
