@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -46,4 +46,151 @@
         padding: 1rem 0 0 1.3rem;
     }
 
+} */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.parent-container{
+    height: 120px;
+    color: black;
+    background-color: lightskyblue;
+}
+
+.header-container{
+    display: grid;
+    justify-items: center;
+    margin: 10px 0 0 0;
+}
+
+.logo{
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.nav{
+  margin: 20px 0 0 0;
+}
+
+ ul a {
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+
+.register-parent-container {
+    height: 200px;
+    margin-top: 5rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+ 
+}
+
+
+.input{
+   height: 2rem;
+   width: 27rem;
+   margin-top: 1rem;
+}
+
+#Email {
+    margin-left: 1.9rem;
+}
+
+.submit-button {
+    margin: 4px 0 0 5rem
+}
+
+.closing-parent-container{
+    display: grid;
+    padding-top: 8rem;
+    color: rgb(201, 135, 49);
+    height: 50px;
+    margin-left: 10px;
+}
+
+.Email{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+@media (max-width: 990px){
+   .closing-parent-container{
+       padding-top: 5rem;
+    }
+}
+
+@media (max-width: 676px){
+    .closing-parent-container{
+        margin-left: 0;
+    }
+
+    .Email{
+        margin-left: 3.5rem;
+    }
+}
+
+@media (max-width: 328px){
+    .closing-parent-container{
+        width: 400px;
+    }
+}
+
+@media (max-width: 700px){
+
+  .header-container{
+      align-content: space-between;
+   }
+
+}
+
+@media (max-width: 580px){
+
+   .register-parent-container{
+        background-color: rgb(94, 60, 17);
+    }
+
+    .closing-parent-container{
+        justify-items: center;
+    }
+
+    .input{
+        width: 19rem;
+        margin-top: 0;
+    }
+     #Email{
+        margin-left: 0;
+     }
+     
+    .label{
+        display: block;
+        
+    }
+
+    .submit-button{
+        margin: 0;
+    }
+}
+
+@media (max-width: 328px){
+    .parent-container{
+        width: 400px;
+    }
+
+    .register-parent-container{
+        width: 400px;
+    }
 }
