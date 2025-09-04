@@ -48,13 +48,49 @@ body {
 
 .box{
     background-color: yellow;
-    margin-right: 2rem;
+    margin: 1rem 2rem 0 0;
     padding: 2rem 0 0 2rem;
     border: 2px solid;
     width: 5rem;
     height: 5rem;
+    transition: 0.2s ease;
+    animation-name: slideLeft;
+    animation-duration: 2s;
 }
 
+
+.box:hover{
+    background-color: lime;
+}
+
+.box:active{
+    background-color: red;
+    transform: scale(1.2) ;
+} 
+
+
+
+ @keyframes slideLeft{
+    from{transform: translateX(300%)}
+}
+
+
+
+
+@media (max-width: 890px){
+    .box-container{
+        height: 13rem;
+        background-color: purple;
+    }
+}
+
+
+@media (max-width: 896px){
+    .box-container{
+        height: 13rem;
+        background-color: brown;
+    }
+}
 
 @media (max-width: 630px){
     .header-container {
@@ -121,3 +157,5 @@ body {
      width: 13rem;
    }
 }
+
+
