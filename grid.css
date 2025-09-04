@@ -32,12 +32,18 @@ body {
     margin-right: 2rem;
 }
 
+.main{
+    position: relative;
+    top: 3rem;
+}
+
 .box-container{
     display: grid;
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: 100px 100px;
+    column-gap: 2rem;
     background-color: green;
     color: black;
 }
@@ -51,11 +57,21 @@ body {
 }
 
 
-@media (max-width: 430px){
+@media (max-width: 600px){
+    .box-container{
+        column-gap: 0.8rem;
+    }
 
+    .box{
+        margin-left: 0.5rem;
+        background-color: orange;
+        
+    }
+}
+
+@media (max-width: 430px){
     .box-container {
        background-color: blue;
-       align-content: center;
        grid-template-columns: repeat(2, 100px);
        grid-template-rows: repeat(4, 90px);
     }
@@ -63,13 +79,10 @@ body {
     .box{
         margin-left: 0.5rem;
     }
-
-   
 }
 
 
 @media (max-width: 379px){
-
     .header-container {
        background-color: gold;
     }
@@ -83,7 +96,6 @@ body {
 }
 
 @media (max-width: 220px){
-
     .header-container {
        background-color: lime;
        width: 13.5rem;
