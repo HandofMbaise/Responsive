@@ -111,3 +111,13 @@ body {
      height: 55rem;
    }
 }
+
+@media (max-width: 200px){
+    .header-container{
+        width: 13rem;
+    }
+    
+    .box-container{
+     width: 13rem;
+   }
+}
