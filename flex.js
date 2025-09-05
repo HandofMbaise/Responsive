@@ -2,7 +2,7 @@ const box = document.querySelectorAll('.box');
 
 
 function Game(){
-   console.log('Hi');
+   alert('Hi Box');
 }
 
 box.forEach(box => {box.addEventListener('click', Game)});
